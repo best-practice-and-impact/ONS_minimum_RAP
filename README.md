@@ -20,7 +20,7 @@ quarto::quarto_render("path_to_repository/site")
 
 All site contents can be found in the `site/` folder. When adding or removing pages, or changing filenames, remember to edit the `_quarto.yml` file under the website settings, e.g.:
 
-`
+```
 website:
   title: ONS minimum RAP standards
   navbar:
@@ -31,4 +31,4 @@ website:
         text: Page 1
       - href: page_2.qmd
         text: Page 2
-`
+```
