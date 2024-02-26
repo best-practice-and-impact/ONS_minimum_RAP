@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.80">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>ONS minimum RAP standards - Documentation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">ONS minimum RAP standards</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./code_standards.html">Code standards</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Documentation.html">Documentation</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ways_of_working.html">Ways of working</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project_management.html">Project management</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
+<li><a href="#document-everything-that-is-needed-to-write-and-run-the-code" class="nav-link" data-scroll-target="#document-everything-that-is-needed-to-write-and-run-the-code">4. Document everything that is needed to write and run the code</a>
+<ul class="collapse">
+<li><a href="#create-readme-files-for-every-project" class="nav-link" data-scroll-target="#create-readme-files-for-every-project">4.1 Create README files for every project</a></li>
+<li><a href="#embed-design-documentation-with-code" class="nav-link" data-scroll-target="#embed-design-documentation-with-code">4.2 Embed design documentation with code</a></li>
+<li><a href="#document-dependencies" class="nav-link" data-scroll-target="#document-dependencies">4.3 Document dependencies</a></li>
+<li><a href="#record-manual-quality-assurance-and-tests" class="nav-link" data-scroll-target="#record-manual-quality-assurance-and-tests">4.4 Record manual quality assurance and tests</a></li>
+</ul></li>
+<li><a href="#document-what-the-code-is-doing" class="nav-link" data-scroll-target="#document-what-the-code-is-doing">5. Document what the code is doing</a>
+<ul class="collapse">
+<li><a href="#code-comments-should-explain-the-why-not-the-how" class="nav-link" data-scroll-target="#code-comments-should-explain-the-why-not-the-how">5.1 Code comments should explain the “why” not the “how”</a></li>
+<li><a href="#document-functions-and-classes" class="nav-link" data-scroll-target="#document-functions-and-classes">5.2 Document functions and classes</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
+
+<div class="quarto-title"><h1 class="title display-7">Documentation</h1></div></header>
+
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.</p>
+</div>
+</div>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>Even well written code requires some documentation. Good documentation makes your code easier for someone else to understand and easier to work with. It also helps people who join the project or review the code. Documentation should always be up to date and stored alongside the code itself (for example as part of the code Gitlab or Github repository), so that people don’t have to search for it.</p>
+<p>Documentation can also be excessive! Writing readable, automated code (see code standards) reduces the need for lots of code comments and lengthy desk instructions.</p>
+</section>
+<section id="document-everything-that-is-needed-to-write-and-run-the-code" class="level2">
+<h2 class="anchored" data-anchor-id="document-everything-that-is-needed-to-write-and-run-the-code">4. Document everything that is needed to write and run the code</h2>
+<p>You should aim to document everything that a contributor would need to review, edit or run your code. These things should be documented alongside the code whenever possible, rather than in an external location. We have listed some essential forms of documentation below, although others may be appropriate, depending on the project.</p>
+<section id="create-readme-files-for-every-project" class="level3">
+<h3 class="anchored" data-anchor-id="create-readme-files-for-every-project">4.1 Create README files for every project</h3>
+<p>All pipelines should have a README file. README files are easy to create and maintain but are often neglected as part of pipeline development. These files should be the first thing that someone looking at your code reads. As a minimum, they should include: * Background - what the code is for and the process it executes. * Set up instructions, for example how to install the code, get all the supporting packages you need, prepare your input data, and configure the workflow. * How to run the code.</p>
+<p>Depending on the project, you might add other information to your README file. After reading the README, anyone should be able to install and run your code provided they have access to the data.</p>
+<p>If you need detailed running instructions, you might create an extra markdown file for these and link it to your README file.</p>
+</section>
+<section id="embed-design-documentation-with-code" class="level3">
+<h3 class="anchored" data-anchor-id="embed-design-documentation-with-code">4.2 Embed design documentation with code</h3>
+<p>Every project should have some design documentation. How much you need depends on the complexity of the work. At the very least it should cover what the pipeline does, what it uses as its inputs and what outputs it makes. This can be included in the README file. You can also use flow charts to show what the overall design looks like. It is also useful to link to other documentation about the methods used and why the workflow is set up as it is.</p>
+<p>Documenting the design helps everyone understand what the code is supposed to achieve. It also helps you to assess whether the code is actually doing what it is supposed to do. Having a clear idea of the overall design and why it is set up this way also makes it clear whether the code could be improved.</p>
+</section>
+<section id="document-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="document-dependencies">4.3 Document dependencies</h3>
+<p>Most pipelines rely on external packages. Make it as easy as possible for others to replicate the correct environment when running the code. That means documenting the packages you use, for example using requirements files (python) or as part of package documentation (R) [add links].</p>
+<p>At a minimum, you should have a list of dependencies. If you need specific versions of these for the code to work, make sure you let your users know which versions they can use.</p>
+</section>
+<section id="record-manual-quality-assurance-and-tests" class="level3">
+<h3 class="anchored" data-anchor-id="record-manual-quality-assurance-and-tests">4.4 Record manual quality assurance and tests</h3>
+<p>When tests and checks are not automated, record these alongside the code. Include manual checks and tests in desk instructions, for example in the README file or a separate document. This means other people running the pipeline will be able to replicate your quality assurance steps or verify the work you have done.</p>
+<p>For manual tests and checks, maintain a clear record of what was tested, who by, when and what they found. The easiest way to do this is as part of a code review, which you can record using pull requests (GitHub) or merge requests (Gitlab) [add links].</p>
+</section>
+</section>
+<section id="document-what-the-code-is-doing" class="level2">
+<h2 class="anchored" data-anchor-id="document-what-the-code-is-doing">5. Document what the code is doing</h2>
+<p>Your scripts should contain enough documentation for other coders to be able to understand what each part of the code is intended to do. However, there is such a thing as too much documentation. Documentation inside the code should not repeat things that are documented elsewhere, e.g.&nbsp;the README file.</p>
+<section id="code-comments-should-explain-the-why-not-the-how" class="level3">
+<h3 class="anchored" data-anchor-id="code-comments-should-explain-the-why-not-the-how">5.1 Code comments should explain the “why” not the “how”</h3>
+<p>Use code comments (other than function documentation) sparingly. Code comments explain why the code is written the way it is when it would not be obvious to an experienced programmer. They are not there to explain syntax to inexperienced programmers or to repeat in plain English the logic found in the code. Too many code comments make code harder to read and work with!</p>
+<p>The one exception to this rule is code written for learning purposes. A lot of people assume code should be littered with comments, as the tutorial code they learned from was heavily commented. If colleagues struggle with understanding production code, you should support them to learn rather than turning pipeline code into tutorial code.</p>
+<p>Explanations of methodology or model assumptions do not belong in code comments. Rather, you should record them elsewhere and signpost them in your documentation. For example, you can create assumption or methodology documentation files and place them alongside the code in your repository.</p>
+</section>
+<section id="document-functions-and-classes" class="level3">
+<h3 class="anchored" data-anchor-id="document-functions-and-classes">5.2 Document functions and classes</h3>
+<p>If your code uses functions and classes, you must document them appropriately. In python that means using <a href="https://peps.python.org/pep-0257/">docstrings</a>. In R it means using <a href="https://roxygen2.r-lib.org/">roxygen2</a>. These formats are especially useful when packaging code [add link], but we recommend using them for all your functions and classes because they give you a standard format to work with that makes it much easier to package code at a later date. Otherwise, you can use a block of code comments.</p>
+<p>Good function and class documentation reduces the need to clutter the code with comments and ensures you cover the most important information. Always document what a function or class takes in as its inputs, what it does, and what output it produces.</p>
+
+
+</section>
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+</body></html>

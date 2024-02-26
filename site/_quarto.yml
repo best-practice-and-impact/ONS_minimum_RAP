@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: ../docs/
+
+website:
+  title: ONS minimum RAP standards
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: code_standards.qmd
+        text: Code standards
+      - href: Documentation.qmd
+        text: Documentation
+      - href: ways_of_working.qmd
+        text: Ways of working
+      - href: project_management.qmd
+        text: Project management
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+editor: visual
+execute:
+  echo: false
+  warning: false

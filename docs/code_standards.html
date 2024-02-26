@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.80">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>ONS minimum RAP standards - Code standards</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">ONS minimum RAP standards</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./code_standards.html" aria-current="page">Code standards</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Documentation.html">Documentation</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ways_of_working.html">Ways of working</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project_management.html">Project management</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
+<li><a href="#use-open-source-languages-and-tools" class="nav-link" data-scroll-target="#use-open-source-languages-and-tools">1. Use open-source languages and tools</a></li>
+<li><a href="#minimise-repetition" class="nav-link" data-scroll-target="#minimise-repetition">2. Minimise repetition</a>
+<ul class="collapse">
+<li><a href="#use-control-flow" class="nav-link" data-scroll-target="#use-control-flow">2.1 Use control flow</a></li>
+<li><a href="#use-functions" class="nav-link" data-scroll-target="#use-functions">2.2 Use functions</a></li>
+<li><a href="#make-complex-code-modular" class="nav-link" data-scroll-target="#make-complex-code-modular">2.3 Make complex code modular</a></li>
+</ul></li>
+<li><a href="#make-your-code-readable-and-self-documenting" class="nav-link" data-scroll-target="#make-your-code-readable-and-self-documenting">3. Make your code readable and self-documenting</a>
+<ul class="collapse">
+<li><a href="#use-a-standard-code-style" class="nav-link" data-scroll-target="#use-a-standard-code-style">3.1 Use a standard code style</a></li>
+<li><a href="#everything-that-has-a-name-in-your-code-should-have-a-name-that-is-easy-to-understand" class="nav-link" data-scroll-target="#everything-that-has-a-name-in-your-code-should-have-a-name-that-is-easy-to-understand">3.2 Everything that has a name in your code should have a name that is easy to understand</a></li>
+<li><a href="#it-should-be-easy-to-understand-which-packages-you-use-and-where-functions-come-from" class="nav-link" data-scroll-target="#it-should-be-easy-to-understand-which-packages-you-use-and-where-functions-come-from">3.3 It should be easy to understand which packages you use and where functions come from</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header" class="quarto-title-block default">
+
+<div class="quarto-title"><h1 class="title display-7">Code standards</h1></div></header>
+
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.</p>
+</div>
+</div>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>Well written code is easy to read and understand. As a result, it is easy to amend, reuse and review. The actions below help to make code more readable and easier to edit and maintain.</p>
+</section>
+<section id="use-open-source-languages-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="use-open-source-languages-and-tools">1. Use open-source languages and tools</h2>
+<p>We recommend using open-source tools for your coding work. The Central Digital and Data Office (CDDO) Service Manual recommends an <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#licensing-your-code">“open source by default”</a> approach for government code. Open source languages and tools make work more accessible for users, colleagues and stakeholders. They can access them without expensive licenses. Using open source also makes it easier to onboard people, get external review and collaborate across teams and departments.</p>
+<p>Tools must be appropriate for the problem you are trying to solve. Python and R are usually best for analysis workflows. They are our <a href="https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Coding-languages-for-analysis-at-ONS.aspx">approved coding languages for analysis</a> and allow you to comply with this minimum standard. While you can use SQL in your code, a pipeline written entirely in SQL will not meet the standard.</p>
+<p>Open-source languages also give you easy access to code packages created by others. There are large ecosystems of R and python packages designed for data science and statistics that can help you manipulate, analyse, and visualise data. Use standard, well tested packages in your code whenever you can, rather than attempting to reinvent the wheel. This saves time and increases resilience. Established packages with a large user base are usually extensively tested and have already had a lot of development work put into them.</p>
+</section>
+<section id="minimise-repetition" class="level2">
+<h2 class="anchored" data-anchor-id="minimise-repetition">2. Minimise repetition</h2>
+<p>Repetitive code is hard to read. It also makes errors more likely. When the same logic repeats in multiple places you will have to change every single one when you update the pipeline. It is easy to miss something. Repetitive code is inefficient to write and document and makes it harder to review your work. In extreme cases, complex and highly repetitive code can be so difficult to understand and maintain that it has to be abandoned and rewritten completely. Although highly reptitive code can still be reproducible and quality assured, we highly advise minimising repetition in both ad hoc and re-usable code.</p>
+<section id="use-control-flow" class="level3">
+<h3 class="anchored" data-anchor-id="use-control-flow">2.1 Use control flow</h3>
+<p>Control flow means changing the order that code runs in depending on the circumstances. This helps when you need to change and re-run your code often to adapt to different needs. For example, you can use if statements to make the same code behave differently in different situations. You can use loops to execute the same chunk of code a number of times or until a certain condition is met. [link to relevant course]</p>
+</section>
+<section id="use-functions" class="level3">
+<h3 class="anchored" data-anchor-id="use-functions">2.2 Use functions</h3>
+<p>Functions are chunks of self-contained code that can be called from anywhere. Once you’ve written a function, you can execute it as many times as you need to by calling its name rather than copying the code it runs into your main pipeline lots of times. Functions can be written to receive different information each time, so you can apply them in different situations. For example, you can write a function to calculate a mean average that will work on any set of numbers. [link to relevant course]</p>
+</section>
+<section id="make-complex-code-modular" class="level3">
+<h3 class="anchored" data-anchor-id="make-complex-code-modular">2.3 Make complex code modular</h3>
+<p>Code is modular when it is broken down into multiple, self-contained pieces. This makes the code easier to read, test and change. [link to relevant courses] The best way to make code modular is to write most of your pipeline using functions or classes. Split long scripts into multiple modules, but make sure that you can still run the entire pipeline from one script or a single command. This is essential for code that is complex or intended for re-use, as larger code bases can quickly become difficult to manage.</p>
+</section>
+</section>
+<section id="make-your-code-readable-and-self-documenting" class="level2">
+<h2 class="anchored" data-anchor-id="make-your-code-readable-and-self-documenting">3. Make your code readable and self-documenting</h2>
+<p>Well written code also needs less documentation. There are things you can do to make it much easier for an experienced programmer to pick up your code and use it without your help. Again, less readable code can still be reproducible, but writing more readable code will make your work more efficient and your code easier to review.</p>
+<section id="use-a-standard-code-style" class="level3">
+<h3 class="anchored" data-anchor-id="use-a-standard-code-style">3.1 Use a standard code style</h3>
+<p>We recommend using PEP8 for python and the Tidyerse or Google R Style Guide for R. These styles are designed to be readable and intuitive and experienced coders are familiar with them. If needed, you may want to adapt them a little for your local situation. While full compliance with well-established styles will maximise transparency, the main objective is to make sure everyone in your team agrees on and uses the same coding style.</p>
+</section>
+<section id="everything-that-has-a-name-in-your-code-should-have-a-name-that-is-easy-to-understand" class="level3">
+<h3 class="anchored" data-anchor-id="everything-that-has-a-name-in-your-code-should-have-a-name-that-is-easy-to-understand">3.2 Everything that has a name in your code should have a name that is easy to understand</h3>
+<p>This includes things like variables, functions, modules, tests, scripts, and folders. Names should not be cryptic or obvious only to the people currently working on the code.</p>
+</section>
+<section id="it-should-be-easy-to-understand-which-packages-you-use-and-where-functions-come-from" class="level3">
+<h3 class="anchored" data-anchor-id="it-should-be-easy-to-understand-which-packages-you-use-and-where-functions-come-from">3.3 It should be easy to understand which packages you use and where functions come from</h3>
+<p>In python, importing packages should be done at the top of the script. In R, avoid loading whole libraries using library(). [link to resources on this]. Instead, clearly reference the libraries you are using in the code using R namespaces – so use ggplot2::ggplot(), not just ggplot(). Make sure your documentation explains clearly which packages (in which versions) must be installed to run your code.</p>
+
+
+</section>
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+</body></html>

@@ -1,0 +1,45 @@
+---
+title: "Code standards"
+
+---
+:::{.callout-note}
+Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.
+:::
+
+## Motivation
+Well written code is easy to read and understand. As a result, it is easy to amend, reuse and review. The actions below help to make code more readable and easier to edit and maintain. 
+
+## 1. Use open-source languages and tools
+
+We recommend using open-source tools for your coding work. The Central Digital and Data Office (CDDO) Service Manual recommends an [“open source by default”](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#licensing-your-code) approach for government code. Open source languages and tools make work more accessible for users, colleagues and stakeholders. They can access them without expensive licenses. Using open source also makes it easier to onboard people, get external review and collaborate across teams and departments.  
+
+Tools must be appropriate for the problem you are trying to solve. Python and R are usually best for analysis workflows. They are our [approved coding languages for analysis](https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Coding-languages-for-analysis-at-ONS.aspx) and allow you to comply with this minimum standard. While you can use SQL in your code, a pipeline written entirely in SQL will not meet the standard.  
+
+Open-source languages also give you easy access to code packages created by others. There are large ecosystems of R and python packages designed for data science and statistics that can help you manipulate, analyse, and visualise data. Use standard, well tested packages in your code whenever you can, rather than attempting to reinvent the wheel. This saves time and increases resilience. Established packages with a large user base are usually extensively tested and have already had a lot of development work put into them. 
+
+## 2. Minimise repetition 
+
+Repetitive code is hard to read. It also makes errors more likely. When the same logic repeats in multiple places you will have to change every single one when you update the pipeline. It is easy to miss something. Repetitive code is inefficient to write and document and makes it harder to review your work. In extreme cases, complex and highly repetitive code can be so difficult to understand and maintain that it has to be abandoned and rewritten completely. Although highly reptitive code can still be reproducible and quality assured, we highly advise minimising repetition in both ad hoc and re-usable code. 
+
+### 2.1 Use control flow
+Control flow means changing the order that code runs in depending on the circumstances. This helps when you need to change and re-run your code often to adapt to different needs. For example, you can use if statements to make the same code behave differently in different situations. You can use loops to execute the same chunk of code a number of times or until a certain condition is met. [link to relevant course]
+
+### 2.2 Use functions
+Functions are chunks of self-contained code that can be called from anywhere. Once you’ve written a function, you can execute it as many times as you need to by calling its name rather than copying  the code it runs into your main pipeline lots of times. Functions can be written to receive different information each time, so you can apply them in different situations. For example, you can write a function to calculate a mean average that will work on any set of numbers. [link to relevant course]
+
+### 2.3 Make complex code modular
+Code is modular when it is broken down into multiple, self-contained pieces. This makes the code easier to read, test and change. [link to relevant courses] The best way to make code modular is to write most of your pipeline using functions or classes. Split long scripts into multiple modules, but make sure that you can still run the entire pipeline from one script or a single command. This is essential for code that is complex or intended for re-use, as larger code bases can quickly become difficult to manage.
+
+## 3. Make your code readable and self-documenting
+
+Well written code also needs less documentation. There are things you can do to make it much easier for an experienced programmer to pick up your code and use it without your help. Again, less readable code can still be reproducible, but writing more readable code will make your work more efficient and your code easier to review.
+
+### 3.1 Use a standard code style
+We recommend using PEP8 for python and the Tidyerse or Google R Style Guide for R. These styles are designed to be readable and intuitive and experienced coders are familiar with them. If needed, you may want to adapt them a little for your local situation. While full compliance with well-established styles will maximise transparency, the main objective is to make sure everyone in your team agrees on and uses the same coding style.
+
+### 3.2 Everything that has a name in your code should have a name that is easy to understand
+This includes things like variables, functions, modules, tests, scripts, and folders. Names should not be cryptic or obvious only to the people currently working on the code. 
+
+### 3.3 It should be easy to understand which packages you use and where functions come from
+In python, importing packages should be done at the top of the script. In R, avoid loading whole libraries using library(). [link to resources on this]. Instead, clearly reference the libraries you are using in the code using R namespaces – so use ggplot2::ggplot(), not just ggplot(). Make sure your documentation explains clearly which packages (in which versions) must be installed to run your code.
+

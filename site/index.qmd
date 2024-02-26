@@ -1,0 +1,58 @@
+---
+title: "Home"
+---
+:::{.callout-note}
+Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.
+:::
+
+## Aims
+
+This document sets a minimum standard for Reproducible Analytical Pipelines (RAP) for ONS analysts. RAP refers to the use of tools and practices borrowed from software engineering to make our analysis more reproducible.  
+
+Analysis is reproducible if we can repeat our analysis process reliably. In practice, that means we can always produce the same outputs again given the same data. The “gold standard” for reproducibility is a pipeline that is robust and well documented enough that another analyst could reproduce your outputs with no support except your code, documentation, and data. 
+
+There is no single way to make analysis code reproducible. Rather, there are different ways of working that can help us get to that goal. We hope this document provides useful and coherent criteria for how RAP at ONS should look in practice.  
+
+Reproducibility is not an end in itself. Rather, it is necessary so our work has quality, value, and transparency. The minimum RAP standards are written with this in mind. The criteria below are there to make sure we get the most value out of reproducible analysis.  
+
+## How should the standard be used? 
+
+The standard sets a minimum set of expectations that code should comply with if it is used to produce analytical outputs. The analysis might be ad hoc analysis, to create official and national statistics or underpin other ONS analysis. While this is a minimum standard, there are many other techniques, tools and practices that can improve your code and make it even more efficient and reproducible. Once you comply with the minimum standard, we hope you will build on your work to make it even more resilient.  
+
+We do not expect all coding projects to meet the standard immediately. If your work does not comply with the minimum standard, you should work to put in place coherent and achievable plans for how you will achieve compliance. 
+
+Most of the practices and activities here apply to both re-usable pipelines and ad hoc analysis. Criteria that only apply to re-usable pipelines are highlighted when they appear. 
+
+Lastly, this document is not intended to teach coding skills. For this, you can [read our guidance on good coding practices](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) or use our internal coding courses. 
+
+## Accessibility statement
+
+This accessibility statement applies to the Coding in Analysis and Research Survey report. Please note that this does not include third-party content that is referenced from this site.
+
+The website is managed by the Methodology and Quality division of the Office for National Statistics. We would like this guidance to be accessible for as many people as possible. This means that you should be able to:
+
+* change colours, contrast levels and fonts
+* zoom in up to 300% without the text spilling off the screen
+* navigate most of the website using just a keyboard
+* navigate most of the website using speech recognition software
+* listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)
+
+### Feedback and reporting accessibility problems
+
+We’re always looking to improve the accessibility of our guidance. If you find any problems not listed on this page or think that we’re not meeting accessibility requirements, please contact us by email at gsshelp@statistics.gov.uk. Please also get in touch if you are unable to access any part of this guidance, or require the content in a different format.
+
+We will consider your request and aim to get back to you within 5 working days.
+
+### Enforcement procedure
+
+The Equality and Human Rights Commission (EHRC) is responsible for enforcing the [Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’)](https://www.legislation.gov.uk/uksi/2018/952/made). If you’re not happy with how we respond to your complaint, you should [contact the Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
+
+## Contact details
+
+We would like to know what you think of the survey and the outputs. Please contact us if you have feedback on any of the following:
+
+* Outputs/analyses you would like to see added to this research
+* Information you would like to see collected in the next iteration of CARS
+* Any other comments
+
+If you are interested in this survey or any of the questions asked, or want to give feedback, please contact ASAP@ONS.gov.uk.

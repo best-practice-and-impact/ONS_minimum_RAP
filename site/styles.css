@@ -1,0 +1,105 @@
+#TOC > ul > li > a.active {
+  background-color: white;
+  border-bottom: none;
+  border-left: 1px solid #ff6900 !important;
+  color: black !important;
+}
+
+#TOC > ul > li > a.active {
+  background-color: white;
+  border-bottom: none;
+  border-left: 1px solid #ff6900 !important;
+  color: black !important;
+}
+
+#TOC > ul > li > ul > li > a.active {
+  background-color: white;
+  border-bottom: none;
+  border-left: 1px solid #ff6900 !important;
+  color: black !important;
+}
+
+#TOC > ul > li > ul > li > a.active {
+  background-color: white;
+  border-bottom: none;
+  border-left: 1px solid #ff6900 !important;
+  color: black !important;
+}
+
+
+#TOC > ul > li > a:hover {
+  background-color: #ffdd00;
+  border-left: 1px solid black;
+  color: black !important;
+}
+
+#TOC > ul > li > ul > li > a:hover {
+  background-color: #ffdd00;
+  border-left: 1px solid black;
+  color: black !important;
+}
+
+
+.navbar {
+  background-color: #004556;
+  padding-bottom: 4px;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-collapse > ul > li > a {
+  color: white !important;
+}
+
+.nav-link.active {
+  border-bottom: 4px solid #ff6900;
+  background-color: #004556;
+}
+
+.navbar-collapse > ul > li > a {
+  border-bottom: 4px solid #004556;
+}
+
+.navbar-collapse > ul > li > a:hover {
+  border-bottom: 4px solid #ff6900;
+}
+
+.navbar-collapse > ul > li > a:focus {
+  background-color: #ffdd00;
+  border-bottom: 4px solid black;
+  color: black;
+}
+
+.navbar-toggle {
+  color: white;
+  border-width: 2px;
+}
+
+.navbar-toggle:hover {
+  background-color: black;
+  border-color: #ff6900;
+}
+
+.navbar-toggle:focus {
+  background-color: #ffdd00;
+  border: 2px solid black;
+  color: black;
+}
+
+.toggle-button {
+  text-decoration: underline;
+}
+
+.toggle-button:hover {
+  background-color: #ffdd00;
+  border-bottom: 4px solid black;
+  color: black;
+}
+
+p > a:hover{
+  background-color: #ffdd00;
+  border-bottom: 4px solid black;
+  color: black;
+}
