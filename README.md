@@ -6,15 +6,15 @@ This repository contains draft minimum RAP standards for the ONS. This is not cu
 
 Make sure you have quarto installed and working. With the R project open in RStudio, run the following command: 
 
-`
+```
 quarto::quarto_render("site")
-`
+```    
 
 Alternatively, if you do not have the repository location as your working directory, run the following command:
 
-`
+```
 quarto::quarto_render("path_to_repository/site")
-`
+```
 
 ## Editing the site
 
