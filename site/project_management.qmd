@@ -3,33 +3,33 @@ title: "Project management"
 
 ---
 :::{.callout-note}
-Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.
+Please note, this is a draft and is published for feedback purposes. The contents of these pages may change in future in response to feedback and suggestions.
 :::
 
 ## Motivation
 
-Good project management is essential for making code sustainable and fit for purpose. This should not mean lots of additional meetings or box-ticking exercises! It is about making the right decisions at the right time to ensure coding work goes as smoothly as possible. You may already do some or all of the below.
+Good project management is essential for making code sustainable and fit for purpose. This should not mean lots of additional meetings or box-ticking exercises! It is about making the right decisions at the right time to ensure coding work goes as smoothly as possible. You may already do some or all of what we set out here.
 
 ## 10. Set out clear aims and scope for each project
 
-A project should have clear aims before you begin coding. Without this, it will not be possible to determine what the proportionate level of quality assurance and documentation will be for the work you are doing. Deciding on your aims early on will keep your project focussed on the end goal.
+A project should have clear aims before you begin coding. Without them, you will not be able to set a proportionate level of quality assurance and decide how much documentation you will need for the work. Deciding on your aims early on will keep your project focused on the end goal.
 
-Similarly, you should have a clear idea of what is and isn’t in scope for your coding project. It should be clear to everyone involved where your responsibilities begin and end. This will depend on many factors such as the number of business areas involved, the complexity of the pipeline and the IT systems involved. You should ensure other people involved in the analysis are aware of what will be in scope for the project to avoid scope creep, where you end up taking on more and more work that should not have been part of the project. 
+You should also have a clear idea of what is and is not in scope for your coding project. It should be clear to everyone involved where your responsibilities begin and end. This will depend on factors like the number of business areas involved, the complexity of the pipeline and the IT systems you will use. Make sure that other people involved in the analysis know what is in and out of scope for the project to avoid scope creep, where you end up taking on more and more work that should not be part of the project. 
 
 ## 11.	Set out your quality specifications
 
-Ideally, all analysis code should be of the highest possible standard. Realistically, quality should be proportionate to complexity and risk. Highly complex and impactful work will require more testing, review, and documentation than a pipeline with lower impact and complexity. The practices included here should be proportionate and sufficient for most official statistics work, but you may need to do more for mission-critical pipelines. 
+Ideally, all analysis code should be of the highest possible standard. Realistically, quality should be proportionate to complexity and risk. Highly complex and impactful work will require more testing, review, and documentation than a simple pipeline with lower impact. The practices included here should be proportionate and sufficient for most official statistics work, but you may need to do more for mission-critical pipelines. 
 
-Quality specifications should not be determined by the skill level in your team. You should aim to upskill to be able to meet appropriate quality levels based on the complexity and risk of your analysis.
+Quality specifications should not be determined by the skill level in your team. Instead, aim to increase your team's capability to meet appropriate quality levels based on the complexity and risk of your analysis.
 
-## 12. Plan to open source your code in future (if appropriate)
+## 12. If appropriate, plan to open source your code in future
 
-The [Government Service Manual](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#licensing-your-code) states that code funded by the public should be made open source unless there is a good reason not to do so. Plan coding projects with open source in mind, even if open sourcing the code will not be possible for a while. If you can’t open source your code in its current form, consider whether there are things you can do to make it safe to open source. [There is Analysis Function guidance](https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/) on how to open source code effectively and how to decide whether to open source analytical code.
+The [Government Service Manual](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#licensing-your-code) says that code funded by the public should be made open source unless there is a good reason not to do so. Plan coding projects with open source in mind, even if open sourcing the code will not be possible for a while. If you cannot open source your code in its current form, consider whether there are things you can do to make it safe to open source. [There is Analysis Function guidance](https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/) on how to open source code effectively and how to decide whether to open source analytical code.
 
-## 13. Set out roles and responsibilities
+## 13. Set out clear, well-defined roles and responsibilities
 
-You should know who is involved in your coding project and what their role is. This should be written down where everybody on the project can see it. People can have multiple roles and be responsible for multiple parts of the project. Recording roles and responsibilities early on and keeping them up to date means everybody knows who to turn to when important decisions need to be made or when something goes wrong. It also means you know when an important role is not covered and can manage this risk sensibly.
+Everybody on the project needs to know who is working on it and what their role is. This should be written down where everybody on the project can see it and updated as things change. People can have multiple roles and be responsible for multiple parts of the project. Recording roles and responsibilities early on and keeping them up to date means everybody knows who to turn to when important decisions need to be made or when something goes wrong. It also means you know when an important role is not covered and can manage the risk sensibly.
 
-## 14.	Have a succession plan in place
-Code is not reproducible if only one person can use it! Single points of failure mean risks to resilience and reproducibility.
+## 14.	Make a succession plan
+Code is not reproducible if only one person can understand and use it! Single points of failure mean serious risks to resilience and reproducibility.
 Readable and well documented code is already much easier for someone else to pick up, but you should be able to cope with losing one of the coders on your team. Plan to have two people working on the code at all times. If this is impossible, work out a clear plan to bring in more coding resource swiftly, either through recruitment or by borrowing resource from another team. Escalate these risks if you cannot resolve them.
