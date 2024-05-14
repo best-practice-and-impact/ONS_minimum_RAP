@@ -25,7 +25,7 @@ We do not expect all coding projects to meet the standard immediately. If your w
 
 Most of the practices and activities here apply to both re-usable pipelines and ad hoc analysis. Criteria that only apply to re-usable pipelines are highlighted when they appear. 
 
-Lastly, this document is not intended to teach coding skills. For this, you can [read our guidance on good coding practices](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) or use our internal coding courses. 
+Lastly, this document is not intended to teach coding skills. To improve your coding capability you can [read our guidance on good coding practices](https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html) or use ONS internal training courses, in particular the RAP Learning Pathway on the [ONS Learning Hub](https://learninghub.ons.gov.uk/login/index.php). 
 
 ## Accessibility statement
 
@@ -51,10 +51,10 @@ The Equality and Human Rights Commission (EHRC) is responsible for enforcing the
 
 ## Contact details
 
-We would like to know what you think of the survey and the outputs. Please contact us if you have feedback on any of the following:
+We would like to know what you think of the RAP minimum standard. Please contact us if you have feedback on any of the following:
 
-* Outputs/analyses you would like to see added to this research
-* Information you would like to see collected in the next iteration of CARS
+* How we might make the guidance clearer and easier to follow
+* Information you would like to see collected in the next iteration of the guidance
 * Any other comments
 
-If you are interested in this survey or any of the questions asked, or want to give feedback, please contact ASAP@ONS.gov.uk.
+To give feedback, please contact ASAP@ONS.gov.uk.
