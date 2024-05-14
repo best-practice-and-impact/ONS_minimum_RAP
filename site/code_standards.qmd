@@ -3,23 +3,29 @@ title: "Code standards"
 
 ---
 :::{.callout-note}
-This is a draft and is published for feedback purposes. The contents of these pages may change in future in response to feedback and suggestions.
+This guidance is a draft and is published for feedback purposes. The contents of these pages may change in future in response to user feedback.
 :::
 
 ## Motivation
-Well written code is easy to read and understand. As a result, it is easy to amend, reuse and review. The actions below help to make your code more readable and easier to edit and maintain. 
+Well written code is easy to read and understand. As a result, it is also easy to amend, reuse and review. The actions below help to make your code more readable and easier to edit and maintain. 
 
 ## 1. Use open-source languages and tools
 
 We recommend using open-source tools for your coding work. The Central Digital and Data Office (CDDO) Service Manual recommends an [“open source by default”](https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable#licensing-your-code) approach for government code. Open source languages and tools make work more accessible for users, colleagues and stakeholders. They can access and use them without expensive licenses. Using open source also makes it easier to on-board people, get external review and collaborate across teams and departments.  
 
-Tools must be appropriate for the problem you are trying to solve. [Python](https://www.python.org/) and [R](https://www.r-project.org/) are usually best for analysis workflows. They are our [approved coding languages for analysis](https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Coding-languages-for-analysis-at-ONS.aspx) and allow you to comply with this minimum standard. While you can use SQL in your code, a pipeline written entirely in SQL will not meet the standard.  
+Tools must be appropriate for the problem you are trying to solve. [Python](https://www.python.org/) and [R](https://www.r-project.org/) are usually best for analysis workflows. They are our [approved coding languages for analysis at ONS](https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Coding-languages-for-analysis-at-ONS.aspx). Using R or Python will allow you to comply with this minimum standard. While you can use SQL in your code, a pipeline written entirely in SQL would not meet the standard.  
 
-Open-source languages also give you easy access to code packages created by others. There are large ecosystems of R and python packages designed for data science and statistics that can help you manipulate, analyse, and visualise data. Use standard, well tested packages in your code whenever you can, rather than reinventing the wheel. This saves time and increases resilience. Established packages with a large user base are usually extensively tested and have already had a lot of development work put into them. 
+Open-source languages also give you easy access to code packages created by others. There are large ecosystems of R and python packages designed for data science and statistics that can help you manipulate, analyse, and visualise data. 
+
+Use standard, well tested packages in your code whenever you can, rather than reinventing the wheel. This saves time and increases resilience. Established packages with a large user base are usually extensively tested and have already had a lot of development work put into them. 
 
 ## 2. Minimise repetition 
 
-Repetitive code is hard to read. It also makes errors more likely. When the same logic repeats in multiple places you will have to change every single one when you update the pipeline. It is easy to miss something. Repetitive code is inefficient to write and document and makes it harder to review your work. In extreme cases, complex and highly repetitive code can be so difficult to understand and maintain that it has to be abandoned and rewritten completely. Although highly repetitive code can still be reproducible and quality assured, we strongly recommend that you minimise repetition whenever you can in both one off and re-usable code. 
+Repetitive code is hard to read. It also makes errors and mistakes more likely. When the same logic repeats in multiple places you will have to change every single one of them when you update the pipeline. It is very easy to miss something, as the number of parameters you need to review and change soon mounts up. 
+
+Repetitive code is inefficient to write and document. This also makes it harder to review your work. In extreme cases, complex and highly repetitive code can be so difficult to understand and maintain that it has to be abandoned and rewritten completely. Although highly repetitive code can still be reproducible and quality assured, we strongly recommend that you minimise repetition whenever you can in all of your code. 
+
+So how can you minimise repetition?
 
 ### 2.1 Use control flow
 Control flow means changing the order that code runs in depending on the circumstances. This helps when you need to change and re-run your code often to adapt to different needs. For example, you can use if statements to make the same code behave differently in different situations. You can use loops to execute the same chunk of code a number of times or until a certain condition is met. [link to relevant course]
