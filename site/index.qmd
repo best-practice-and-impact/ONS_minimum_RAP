@@ -2,24 +2,26 @@
 title: "Home"
 ---
 :::{.callout-note}
-Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.
+Please note, this is a draft and is published for feedback purposes. The contents of these pages may change in response to feedback and suggestions.
 :::
 
 ## Aims
 
 This document sets a minimum standard for Reproducible Analytical Pipelines (RAP) for ONS analysts. RAP refers to the use of tools and practices borrowed from software engineering to make our analysis more reproducible.  
 
-Analysis is reproducible if we can repeat our analysis process reliably. In practice, that means we can always produce the same outputs again given the same data. The “gold standard” for reproducibility is a pipeline that is robust and well documented enough that another analyst could reproduce your outputs with no support except your code, documentation, and data. 
+Analysis is reproducible if we can repeat the analysis process reliably. In practice, that means we can always produce the same outputs again given the same data. The “gold standard” for reproducibility is a pipeline that is robust and well documented enough that another analyst could reproduce your outputs with no support except your code, documentation, and data. 
 
-There is no single way to make analysis code reproducible. Rather, there are different ways of working that can help us get to that goal. We hope this document provides useful and coherent criteria for how RAP at ONS should look in practice.  
+There is no single way to make analysis code reproducible. Rather, there are different ways of working that can help us get to that goal. We hope this document provides useful and coherent criteria for how a Reproducible Analytical Pipeline at ONS should look in practice.  
 
-Reproducibility is not an end in itself. Rather, it is necessary so our work has quality, value, and transparency. The minimum RAP standards are written with this in mind. The criteria below are there to make sure we get the most value out of reproducible analysis.  
+Reproducibility is not an end in itself. Rather, it is necessary so our work has quality, value, and transparency. The minimum RAP standards are written with this in mind. The criteria set out in this document are there to make sure we get the most value out of reproducible analysis.  
 
 ## How should the standard be used? 
 
-The standard sets a minimum set of expectations that code should comply with if it is used to produce analytical outputs. The analysis might be ad hoc analysis, to create official and national statistics or underpin other ONS analysis. While this is a minimum standard, there are many other techniques, tools and practices that can improve your code and make it even more efficient and reproducible. Once you comply with the minimum standard, we hope you will build on your work to make it even more resilient.  
+The standard sets a minimum set of expectations that code should comply with if it is used to produce analytical outputs. The analysis might be ad hoc, or it might be used to create official and national statistics or underpin other ONS analysis.
 
-We do not expect all coding projects to meet the standard immediately. If your work does not comply with the minimum standard, you should work to put in place coherent and achievable plans for how you will achieve compliance. 
+While this is a minimum standard, there are many other techniques, tools and practices that can improve your code and make it even more efficient and reproducible. Once you comply with the minimum standard, we hope you will build on it to make your work even more resilient.  
+
+We do not expect all coding projects to meet the standard immediately. If your work does not comply with the minimum standard, you should put in place coherent, prioritised and achievable plans for how you will achieve compliance with the standard in time. 
 
 Most of the practices and activities here apply to both re-usable pipelines and ad hoc analysis. Criteria that only apply to re-usable pipelines are highlighted when they appear. 
 
@@ -27,7 +29,7 @@ Lastly, this document is not intended to teach coding skills. For this, you can 
 
 ## Accessibility statement
 
-This accessibility statement applies to the Coding in Analysis and Research Survey report. Please note that this does not include third-party content that is referenced from this site.
+This accessibility statement applies to the RAP minimum standards resource. Please note that this does not include third-party content that is referenced from this site.
 
 The website is managed by the Methodology and Quality division of the Office for National Statistics. We would like this guidance to be accessible for as many people as possible. This means that you should be able to:
 
