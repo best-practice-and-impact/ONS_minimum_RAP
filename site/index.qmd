@@ -2,7 +2,7 @@
 title: "Home"
 ---
 :::{.callout-note}
-Please note, this is a draft and is published for feedback purposes. The contents of these pages may change in response to feedback and suggestions.
+This is an ALPHA draft and is published for feedback purposes. The contents of these pages may change in response to feedback and suggestions.
 :::
 
 ## Aims

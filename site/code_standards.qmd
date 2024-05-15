@@ -3,7 +3,7 @@ title: "Code standards"
 
 ---
 :::{.callout-note}
-This guidance is a draft and is published for feedback purposes. The contents of these pages may change in future in response to user feedback.
+This is an ALPHA draft and is published for feedback purposes. The contents of these pages may change in response to feedback and suggestions.
 :::
 
 ## Motivation
