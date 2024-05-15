@@ -7,7 +7,7 @@ Please note, this is a draft and is published for feedback purposes. The content
 
 ## Aims
 
-This document sets a minimum standard for Reproducible Analytical Pipelines (RAP) for ONS analysts. RAP refers to the use of tools and practices borrowed from software engineering to make our analysis more reproducible.  
+This document sets a minimum standard for Reproducible Analytical Pipelines (RAP) for analysts at the [Office for National Statistics](https://www.ons.gov.uk/). [RAP](https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/) refers to the use of tools and practices borrowed from software engineering to make our analysis more reproducible.  
 
 Analysis is reproducible if we can repeat the analysis process reliably. In practice, that means we can always produce the same outputs again given the same data. The “gold standard” for reproducibility is a pipeline that is robust and well documented enough that another analyst could reproduce your outputs with no support except your code, documentation, and data. 
 
