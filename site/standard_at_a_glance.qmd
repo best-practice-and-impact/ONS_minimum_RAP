@@ -1,5 +1,5 @@
 ---
-title: "The ONS RAP standard at a glance"
+title: "The ONS RAP standards at a glance"
 
 ---
 :::{.callout-note}
@@ -41,7 +41,7 @@ This is a draft and is published for feedback purposes. The contents of these pa
     iii) Test your code
 
 9. Maintain and improve re-usable code continuously
-    i) Made code improvements before errors occur
+    i) Make code improvements before errors occur
     ii) Develop your code iteratively
 
 10. Don't reinvent the wheel
