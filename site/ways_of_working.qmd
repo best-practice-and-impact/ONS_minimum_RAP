@@ -3,7 +3,7 @@ title: "Ways of working"
 
 ---
 :::{.callout-note}
-Please note, this is a draft and is published for feedback purposes. The contents of these changes may change in future in response to feedback and suggestions.
+This is a draft and is published for feedback purposes. The contents of these pages may change in future in response to feedback and suggestions.
 :::
 
 ## Motivation
@@ -11,29 +11,48 @@ Please note, this is a draft and is published for feedback purposes. The content
 These ways of working make RAP easier to implement and more productive. While coding standards are important, it’s just as important to manage your analysis code in the right way. 
 
 ## 6.	Code modules should run end to end without manual intervention
-You should not have to make manual changes to the code or modify parameters during execution. Pipeline scripts should run from end to end. This doesn’t mean automating everything. Rather, think about how best to break the workflow down into sensible steps. If you have manual QA checks to perform, you can do those after the pipeline has finished by building the checks into the run and saving run logs and QA outputs.
+You should not have to make manual changes to the code or modify parameters during execution. Pipeline scripts should run from end to end. This doesn’t mean automating everything! Rather, think about how best to break the workflow down into sensible steps. If you have manual QA checks to perform, you can do those after the pipeline has finished by building the checks into the run and saving run logs and QA outputs for review.
 
 ### 6.1 Minimise manual steps
-Automation isn’t just about efficiency. Automating simple manual steps reduces the risk of error. While those steps might be easy to carry out, each manual step risks human error. Automate analysis steps that computers can do more reliably than us, such as performing basic checks and saving outputs. 
+Automation isn’t just about efficiency. Automating manual steps reduces the risk of error. While those steps might be easy to carry out, each manual step introduces the risk of human error. Automate analysis steps that computers can do more reliably than us, such as performing basic checks, generating standard quality reports and saving outputs. 
 
 ### 6.2	Use configuration files
-Analysts often write pipelines that need frequent adjustment, sometimes even while running the pipeline. For example, we often see scripts where variables need updating or code must be commented in and out (effectively adding or removing code chunks during execution). This is bad for reproducibility because it is very difficult to see what the code looked like for each pipeline run. It also makes the process hard to document, as the analyst needs to know which parts of it to change and when.
+Analysts often write pipelines that need frequent adjustment, sometimes even while running the pipeline. 
 
-You can use configuration files to handle these changes outside of the code itself [add duck book link]. Configuration files store settings for your pipeline. For example, if you know you might need to manually change the input file name, it makes sense for it to be loaded in from the configuration file, so you don’t have to change every time it appears in your script. The file also acts as documentation, because it allows others to see which settings were used to run the code, without needing to read the entire code base. Other configuration settings might be things like dates, data and output folder locations, geographical areas, and model parameters. 
+For example, we often see scripts where variables need updating or code must be commented in and out (effectively adding or removing code chunks during execution). Sometimes comments are even used to record when changes were made. 
 
-Configuration files are especially useful for re-usable pipelines, like regular publications. However, they are also useful for one-off pieces work. Using a configuration file from the start makes code development easier if your code needs a lot of set up. For example, you might need to frequently change parameters when developing a model, even if the resulting model will be a single-use piece of work.
+Working in this way is bad for reproducibility because:    
+    1. It is very hard to see what the code looked like for each pipeline run.    
+    2. It makes the process hard to document, as the analyst needs to know which parts of it to change and when.    
+    3. It makes it hard to version control, because it is not clear who made which changes, when and why.    
+
+Use [configuration](https://best-practice-and-impact.github.io/qa-of-code-guidance/configuration.html) to handle these changes outside of the pipeline itself. 
+
+Configuration files store settings for your pipeline. For example, if you know you might need to manually change the input file name, it makes sense for it to be loaded in from the configuration file, so you don’t have to change every time it appears in your script. 
+
+The file also acts as documentation, because it allows others to see which settings were used to run the code, without needing to read the entire code base. Other configuration settings might be things like dates, data and output folder locations, geographical areas, and model parameters. 
+
+:::{.callout-tip}
+
+Configuration files are especially useful for re-usable pipelines, like regular publications. However, they are also useful for one-off pieces work.    
+
+Using a configuration file from the start makes code development easier if your code needs a lot of set up. For example, you might need to frequently change parameters when developing a model, even if the resulting model will be a single-use piece of work.
+
+:::
 
 ## 7.	Use git for version control
-Using git for version control means you will be able to see what previous versions of the code looked like. That means you can revert to previous iterations of your pipeline, which is very difficult to do manually. If used correctly, it will help you keep an audit trail of who made which contributions, when and why. This also improves efficiency by helping you to collaborate and track changes more effectively. 
+[Version control](https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html) is about managing changes to your analysis over time. Using [git](https://git-scm.com/) for version control means you can see what previous versions of the code looked like and even revert to previous iterations of your pipeline, which is very difficult to do manually. 
 
-Avoid archiving code in your repository. Using git means you can delete code that you don’t need as it’s preserved in the version history. Your repository should not contain archive folders or commented out code.
+If used correctly, git will help you keep an audit trail of who made which contributions, when and why. This also improves efficiency by helping you to collaborate and track changes more effectively. 
+
+Avoid archiving code in your repository or commenting out blocks of code that you no longer use. Using git means you can delete code that you don’t need anymore because it is preserved in the version history. Your repository should not need to contain archived folders or commented out code.
 
 ## 8. Make sure your code meets quality standards
 
-Ultimately, the aim of RAP is to produce high quality statistical outputs. When thinking about the quality of your code you should consider how the ways you are working are helping you achieve this. This also means making sure code quality is proportionate to how complex and risky your pipeline is. Below are essential QA practices for analysis code, although some projects may also require additional forms of quality assurance.
+Ultimately, the aim of RAP is to produce high quality statistical outputs. When thinking about the quality of your code you should consider how the ways you work help you to achieve this. This means making sure code quality is proportionate to how complex and risky your pipeline is. Below are the essential quality assurance practices for analysis code. Remember that complex, high risk projects may require extra forms of quality assurance.
 
 ### 8.1 Make sure your analysis meets quality standards
-Analysis carried out using code should meet the same quality standards as any other analysis. That means using the principles and practices set out in the AQuA book [link] and the ONS quality standard for analysis[link]. 
+Analysis carried out using code should meet the same quality standards as any other analysis. That means using the principles and practices set out in the [AQuA Book]https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government) and the [ONS quality standard for analysis](https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Quality_Standards.aspx). 
 
 ### 8.2 Review all code as you go
 Aim to review your entire code base at least once. Do this as you develop the code rather than at the end. If possible, code should be reviewed by someone who didn’t write it. Consider the quality of the code as well as whether it’s doing what it’s supposed to. [link to code review templates?]. In other words, use code reviews to make sure your code is readable, reproducible and well documented as well as whether it works.
