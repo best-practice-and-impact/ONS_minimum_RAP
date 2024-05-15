@@ -8,7 +8,7 @@ Make sure you have [quarto](https://quarto.org/) installed and working before yo
 
 We have used [RStudio](https://posit.co/products/open-source/rstudio/) and [R](https://www.r-project.org/) to build the site. To follow the same approach, make sure you have R and RStudio installed. Install the [quarto](https://cloud.r-project.org/web/packages/quarto/index.html) package and associated dependencies for R. 
 
-Open the R project ONS_minimum_RAP.Rproj open in RStudio.
+Open the R project ONS_minimum_RAP.Rproj in RStudio.
 
 Run the following command: 
 
