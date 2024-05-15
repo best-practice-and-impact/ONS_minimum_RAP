@@ -96,6 +96,8 @@ Lower quality code usually needs more work in future compared with code that is 
 
 ### 10 Avoid reinventing the wheel
 
-Open source code is a great tool when it comes to building pipeline. There are usually solutions out there for common analysis problems that mean you don’t need to write everything from scratch. When tacking a new problem, check whether a package already exists that can help. We recommend using packages that are well established and actively maintained, which you can find out by visiting their github repositories or equivalents.
+Open source code is a great tool when it comes to building pipeline. There are usually already solutions out there for most common analysis problems that mean you don’t need to write everything from scratch. 
 
-There are many resources online that can help you if such a package isn’t available. Forums like Stack Overflow carry solutions to common errors or bugs and users often offer code examples.
+When tacking a new problem, check whether a package already exists that can help you. We recommend using packages that are well established and actively maintained, which you can find out by visiting their github repositories or equivalents.
+
+There are many resources online that can help you if such a package isn’t available. Forums like [Stack Overflow](https://stackoverflow.com/) carry solutions to common errors or bugs and users often offer code examples.
