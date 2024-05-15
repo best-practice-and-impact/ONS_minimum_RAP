@@ -55,31 +55,47 @@ Ultimately, the aim of RAP is to produce high quality statistical outputs. When 
 Analysis carried out using code should meet the same quality standards as any other analysis. That means using the principles and practices set out in the [AQuA Book]https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government) and the [ONS quality standard for analysis](https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Quality_Standards.aspx). 
 
 ### 8.2 Review all code as you go
-Aim to review your entire code base at least once. Do this as you develop the code rather than at the end. If possible, code should be reviewed by someone who didn’t write it. Consider the quality of the code as well as whether it’s doing what it’s supposed to. [link to code review templates?]. In other words, use code reviews to make sure your code is readable, reproducible and well documented as well as whether it works.
+Aim to review your entire code base at least once. Do this as you develop the code rather than at the end. If possible, code should be reviewed during development by someone who didn’t write it. Consider the quality of the code as well as whether it’s doing what it’s supposed to. Use code reviews to make sure your code is readable, reproducible and well documented as well as whether it works. [The code review ONS Wiki template](https://officenationalstatistics.sharepoint.com/sites/onswiki/SitePages/Analysis-Standards-and-Pipelines-code-review-template.aspx) provides a set of criteria for code review.
 
 ### 8.3 Test your code
-Test your code to make sure it does what you expected it to. Because code runs without errors and produces outputs that look plausible does not guarantee that it works as intended.
+Test your code to make sure it does what you expected it to. Just because code runs without errors and produces outputs that look plausible does not guarantee that it works as intended!
 
-There are many ways to test code. Usually, testing is a lot easier when your code is modular or packaged. Make sure your tests are proportionate to risks and complexity. Ideally, tests should be formalised, whether they are manual or automated. Automating tests makes it much easier to document exactly how you tested your code and makes your tests easier to re-run. Ways to test code include:
-*	Unit tests: automated testing of each function against expected outcomes
-*	Integration tests: tests of how different functions work together
-*	Parallel runs: running a new pipeline and comparing results with those of the existing pipeline
-*	Running the code on different systems to ensure it produces a reliable outcome
+There are many ways to test code. Usually, testing is a lot easier when your code is modular or packaged. Make sure your tests are proportionate to risks and complexity. Ideally, tests should be formalised, whether they are manual or automated. 
 
-Each tests should serve a clear purpose. They are not a tick box exercise. Good tests will help you spot issues with the code before errors happen and speed up code production. 
+:::{.callout-tip}
+Automating tests makes it much easier to document exactly how you tested your code and makes your tests easier to re-run. 
 
-## 9	Maintain and improve your code continuously (applies to re-usable code)
+Ways to test code include:    
 
-Code that is intended for re-use is never truly “finished”. You should expect to continue to maintain the code for as long as it needs to be used. Things like changes to your input data or the systems you use might require unexpected code changes.
+* Unit tests: automated testing of each function against expected outcomes    
+* Integration tests: tests of how different functions work together    
+* Parallel runs: running a new pipeline and comparing results with those of the existing pipeline    
+* Running the code on different systems to ensure it produces a reliable outcome
+
+:::
+
+Tests are not a tick box exercise! Each test should serve a clear purpose.  Good tests will help you spot issues with the code before errors happen and speed up code production. 
+
+## 9	Maintain and improve re-usable code continuously
+
+Code that is intended for re-use is never truly “finished”. Expect to maintain the code for as long as it needs to be used. Things like changes to your input data or the systems you use might require unexpected code changes.
 
 ### 9.1 Make code improvements before errors occur
-Code is much harder to fix once an error has already occurred. Locating the source of the error and fixing the issue is much harder under pressure. Instead, you can focus on reducing risks in the code before they cause any errors. This migth mean making the code easier to change in future, doing more quality assurance and testing, or coding solutions for issues that are likely to arise in future, even if they haven't happened before. Aim to improve your code even while it is functioning correctly to avoid future mistakes. 
+Code is much harder to fix once an error has already occurred. Finding the source of the error and fixing the issue is much harder under pressure. 
+
+Instead, focus on reducing risks in the code before they cause errors. This might mean making the code easier to change in future, doing more quality assurance and testing, or coding solutions for issues that are likely to happen, even if they haven't yet. Aim to improve your code while it is functioning correctly to avoid future mistakes. 
 
 ### 9.2	Develop your code iteratively
-Don’t expect to develop everything to the highest standard right away. If your team are still learning to implement RAP you might aim for a basic set of code at first and improve on it over time. Be aware, however, that lower quality code will need more work in future compared with code that is well written, modular, documented and tested. Early code might also not fully meet user needs. You may want to initially prioritise the most important functionality and later add additional functionality/ 
+Don’t expect to develop everything to the highest standard right away. If your team are still learning to implement RAP you might aim for a basic set of code at first and improve it over time.  Early code might not fully meet user needs. You may want to prioritise the most important functionality first and add lower priority functionality later.
 
-### 10 avoid reinventing the wheel the wheel (highly recommended)
+:::{.callout-caution}
 
-Open source code is a great tool when it comes to building pipeline. There are usually solutions out there for common analysis problems that mean you don’t need to write everything from scratch. When tacking a new problem, it’s worth considering whether a package already exists that can help. We recommend using packages that are well established and actively maintained, which you can find out by visiting their github repositories or equivalents.
+Lower quality code usually needs more work in future compared with code that is well written, modular, documented and tested from the start. 
+
+:::
+
+### 10 Avoid reinventing the wheel
+
+Open source code is a great tool when it comes to building pipeline. There are usually solutions out there for common analysis problems that mean you don’t need to write everything from scratch. When tacking a new problem, check whether a package already exists that can help. We recommend using packages that are well established and actively maintained, which you can find out by visiting their github repositories or equivalents.
 
 There are many resources online that can help you if such a package isn’t available. Forums like Stack Overflow carry solutions to common errors or bugs and users often offer code examples.
