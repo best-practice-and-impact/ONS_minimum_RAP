@@ -11,12 +11,14 @@ website:
         text: Home
       - href: code_standards.qmd
         text: Code standards
-      - href: Documentation.qmd
+      - href: documentation.qmd
         text: Documentation
       - href: ways_of_working.qmd
         text: Ways of working
       - href: project_management.qmd
         text: Project management
+      - href: standard_at_a_glance.qmd
+        text: The standards at a glance
 
 format:
   html:

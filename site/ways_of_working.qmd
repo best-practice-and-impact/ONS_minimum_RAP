@@ -21,10 +21,11 @@ Analysts often write pipelines that need frequent adjustment, sometimes even whi
 
 For example, we often see scripts where variables need updating or code must be commented in and out (effectively adding or removing code chunks during execution). Sometimes comments are even used to record when changes were made. 
 
-Working in this way is bad for reproducibility because:    
-    1. It is very hard to see what the code looked like for each pipeline run.    
-    2. It makes the process hard to document, as the analyst needs to know which parts of it to change and when.    
-    3. It makes it hard to version control, because it is not clear who made which changes, when and why.    
+Working in this way is bad for reproducibility because:
+
+1. It is very hard to see what the code looked like for each pipeline run.    
+2. It makes the process hard to document, as the analyst needs to know which parts of it to change and when.    
+3. It makes it hard to version control, because it is not clear who made which changes, when and why.    
 
 Use [configuration](https://best-practice-and-impact.github.io/qa-of-code-guidance/configuration.html) to handle these changes outside of the pipeline itself. 
 
@@ -94,7 +95,7 @@ Lower quality code usually needs more work in future compared with code that is 
 
 :::
 
-### 10 Avoid reinventing the wheel
+## 10 Don't reinvent the wheel
 
 Open source code is a great tool when it comes to building pipeline. There are usually already solutions out there for most common analysis problems that mean you don’t need to write everything from scratch. 
 
