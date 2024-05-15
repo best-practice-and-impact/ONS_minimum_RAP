@@ -1,10 +1,16 @@
-# Minimum reproducible analytical pipelines (RAP) guidance for the Office for National Statistics (ONS)
+# Minimum Reproducible Analytical Pipelines (RAP) standards for the Office for National Statistics (ONS)
 
-This repository contains draft minimum RAP standards for the ONS. This is not currently finalised, nor is this guidance official ONS policy at this time. The contents of this repository should only be used for feedback purposes.
+This repository contains draft minimum standards for building Reproducible Analytical Pipelines at the ONS. The standards are not currently finalised, so this guidance is not official ONS policy yet. The site is published as an alpha version to get feedback. The contents of this repository should only be used for feedback purposes.
 
 ## Building the site
 
-Make sure you have quarto installed and working. With the R project open in RStudio, run the following command: 
+Make sure you have [quarto](https://quarto.org/) installed and working before you start. 
+
+We have used [RStudio](https://posit.co/products/open-source/rstudio/) and [R](https://www.r-project.org/) to build the site. To follow the same approach, make sure you have R and RStudio installed. Install the [quarto](https://cloud.r-project.org/web/packages/quarto/index.html) package and associated dependencies for R. 
+
+Open the R project ONS_minimum_RAP.Rproj open in RStudio.
+
+Run the following command: 
 
 ```
 quarto::quarto_render("site")
