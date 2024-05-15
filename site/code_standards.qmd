@@ -59,9 +59,8 @@ In python, importing packages should be done at the top of the script.
 
 In R, avoid loading whole libraries using `library()`. Instead, clearly reference the libraries you use in the code using R namespaces for any functions that are not included in base R. 
 
-
 :::{.callout-tip}
-Namespaces make it clear exactly which library a function is from. For example, write `ggplot2::ggplot()` and `dplyr::filter()`, not just `ggplot()` and `filter()`. This makes it clear that when you are calling ggplot, you are calling the ggplot function from the ggplot2 library, not some other ggplot. If you don't do this, you risk R loading the wrong function from the wrong library, and readers of your code will have no idea which library you meant to use.
+In R, namespaces make it clear exactly which library a function is from. For example, write `ggplot2::ggplot()` and `dplyr::filter()`, not just `ggplot()` and `filter()`. This makes it clear that when you are calling ggplot, you are calling the ggplot function from the ggplot2 library, not some other ggplot. If you don't do this, you risk R loading the wrong function from the wrong library, and readers of your code will have no idea which library you meant to use.
 :::
 
 Make sure your documentation explains clearly which packages (in which versions) must be installed to run your code. The easiest and most robust way to do this is to build an R package. R packages set out your dependencies in a standard way as part of the specification. The digital books [Advanced R](https://adv-r.hadley.nz/) and [R Packages](https://r-pkgs.org/) are excellent resources for R users who want to improve their coding skills.
