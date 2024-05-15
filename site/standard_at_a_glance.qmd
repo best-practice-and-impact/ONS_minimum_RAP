@@ -1,0 +1,57 @@
+---
+title: "The ONS RAP standard at a glance"
+
+---
+:::{.callout-note}
+This is a draft and is published for feedback purposes. The contents of these pages may change in future in response to feedback and suggestions.
+:::
+
+1. Use open-source languages for coding
+
+2. Minimise repetition
+    i) Use control flow
+    ii) Use functions
+    iii) Make complex code modular
+
+    
+3. Make your code readable and self-documenting
+    i) Use a standard code style
+    ii) Everything that has a name in your code should have a name that is easy to understand
+    iii) It should be easy to understand which packages you use and where functions come from
+
+4. Document everything that is needed to write and run the code
+    i) Create README files for every project
+    ii) Embed design documentation with code
+    iii) Document dependencies
+    iv) Record manual quality assurance and tests
+
+5. Document what the code is doing
+    i) Code comments should explain the "why", not the "how"
+    ii) Document functions and classes
+
+6. Code modules should run end-to-end without manual intervention
+    i) minimise manual steps
+    ii) Use configuration files
+
+7. Use git for version control
+
+8. Make sure your code meets quality standards
+    i) Make sure your analysis meets quality standards
+    ii) Review all code as you go
+    iii) Test your code
+
+9. Maintain and improve re-usable code continuously
+    i) Made code improvements before errors occur
+    ii) Develop your code iteratively
+
+10. Don't reinvent the wheel
+
+11. Set out clear aims and scope for each project
+
+12. Set out your quality specifications
+
+13. If appropriate, plan to open source your code in the future
+
+14. Set out clear, well defined roles and responsibilities
+
+15. Make a succession plan
