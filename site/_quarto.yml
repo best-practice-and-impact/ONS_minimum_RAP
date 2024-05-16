@@ -9,6 +9,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: standard_at_a_glance.qmd
+        text: The standards at a glance
       - href: code_standards.qmd
         text: Code standards
       - href: documentation.qmd
@@ -17,8 +19,6 @@ website:
         text: Ways of working
       - href: project_management.qmd
         text: Project management
-      - href: standard_at_a_glance.qmd
-        text: The standards at a glance
 
 format:
   html:
