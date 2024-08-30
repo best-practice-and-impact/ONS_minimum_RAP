@@ -2,9 +2,6 @@
 title: "Project management"
 
 ---
-:::{.callout-note}
-This is an ALPHA draft and is published for feedback purposes. The contents of these pages may change in response to feedback and suggestions.
-:::
 
 ## Motivation
 

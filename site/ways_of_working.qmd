@@ -2,9 +2,6 @@
 title: "Ways of working"
 
 ---
-:::{.callout-note}
-This is a draft and is published for feedback purposes. The contents of these pages may change in future in response to feedback and suggestions.
-:::
 
 ## Motivation
 
