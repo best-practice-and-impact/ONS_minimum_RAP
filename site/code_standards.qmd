@@ -2,9 +2,6 @@
 title: "Code standards"
 
 ---
-:::{.callout-note}
-This is an ALPHA draft and is published for feedback purposes. The contents of these pages may change in response to feedback and suggestions.
-:::
 
 ## Motivation
 Well written code is easy to read and understand. As a result, it is also easy to amend, reuse and review. The actions below help to make your code more readable and easier to edit and maintain. 
@@ -30,7 +27,7 @@ Repetitive code is inefficient to write and document. This also makes it harder 
 So how can you minimise repetition?
 
 ### 2.1 Use control flow
-Control flow means changing the order that code runs in depending on the circumstances. This helps when you need to change and re-run your code often to adapt to different needs. Control flow uses two main tools: choices and loops. For example, you can use if statements to make the same code behave differently in different situations. You can use loops to execute the same chunk of code a number of times or until a certain condition is met. [link to relevant course]
+Control flow means changing the order that code runs in depending on the circumstances. This helps when you need to change and re-run your code often to adapt to different needs. Control flow uses two main tools: choices and loops. For example, you can use if statements to make the same code behave differently in different situations. You can use loops to execute the same chunk of code a number of times or until a certain condition is met. Courses on control flow are available on the Learning Hub for [python](https://learninghub.ons.gov.uk/enrol/index.php?id=1222) and [R](https://learninghub.ons.gov.uk/enrol/index.php?id=1223).
 
 ### 2.2 Use functions
 Functions are chunks of self-contained code that can be called from anywhere. Once you’ve written a function, you can execute it as many times as you need to by calling its name rather than copying the code it runs into your main pipeline lots of times. Functions can be written to receive different information each time, so you can apply them in different situations. For example, you can write a function to calculate a mean average that will work on any set of numbers.
