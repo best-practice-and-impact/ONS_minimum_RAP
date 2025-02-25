@@ -1,7 +1,5 @@
 # Minimum Reproducible Analytical Pipelines (RAP) standards for the Office for National Statistics (ONS)
 
-This repository contains draft minimum standards for building Reproducible Analytical Pipelines at the ONS. The standards are not currently finalised, so this guidance is not official ONS policy yet. The site is published as an alpha version to get feedback. The contents of this repository should only be used for feedback purposes.
-
 ## Building the site
 
 Make sure you have [quarto](https://quarto.org/) installed and working before you start. 
