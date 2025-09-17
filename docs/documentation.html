@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ONS minimum RAP standards - Documentation</title>
+<title>Documentation – ONS minimum RAP standards</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-01c78b5cd655e4cd89133cf59d535862.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9c0111285c332aa7292896d494bfd916.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -177,19 +177,23 @@ ul.task-list li input[type="checkbox"] {
 <section id="create-readme-files-for-every-project" class="level3">
 <h3 class="anchored" data-anchor-id="create-readme-files-for-every-project">4.1 Create README files for every project</h3>
 <p>All pipelines should have a README file. README files are easy to create and maintain but are often neglected as part of pipeline development.</p>
-<p>The README file should be the first thing that someone looking at your code reads. As a minimum, a README should include: * Background - what the code is for and the process it executes. * Set up instructions, for example how to install the code, get all the supporting packages you need, prepare your input data, and configure the workflow. * How to run the code.</p>
-<p>Depending on the project, you might add other information to your README file, such as how somebody can contribute to the code and which style guide to use. After reading the README, anyone should be able to install and run your code, provided they have access to the data.</p>
-<p>If you need detailed running instructions, you might create an extra markdown file for these and link it to your README file.</p>
+<p>The README file should be the first thing that someone looking at your code reads. As a minimum, a README should include:<br>
+* Background - what the code is for and the process it executes. A simple and concise summary of what the process does and its inputs and outputs is very helpful here.<br>
+* Set up instructions, for example how to install the code, get all the supporting packages you need, prepare your input data, and configure the workflow.<br>
+* How to run the code.</p>
+<p>Depending on the project, you might add other important information to your README file, such as how somebody should contribute to the code and which style guide to use. After reading the README, anyone should be able to install and run your code, provided they have access to the data.</p>
+<p>If you need detailed running instructions, you might create extra documentation for these and link it to your README file.</p>
 </section>
 <section id="embed-design-documentation-with-code" class="level3">
 <h3 class="anchored" data-anchor-id="embed-design-documentation-with-code">4.2 Embed design documentation with code</h3>
-<p>Every project should have some design documentation. How much you need depends on the complexity of the work. At the very least it should cover what the pipeline does, what it uses as its inputs and what outputs it makes. This can be included in the README file, or linked from it. You can also use flow charts to show what the overall design looks like. It is also useful to link to other documentation about the methods used and why the workflow is set up as it is.</p>
-<p>Documenting the design helps everyone understand what the code is supposed to achieve. It also helps you to assess whether the code actually does what it is supposed to do. Having a clear idea of the overall design and why it is set up this way also makes it clear whether the code could be improved.</p>
+<p>Every project should have some design documentation. How much you need depends on the complexity of the work. At the very least it should cover what the pipeline does, what it uses as its inputs and what outputs it makes. This can be included in the README file, or linked from it if there is a lot of detail. You can also use flow charts to show what the overall design looks like. It is also useful to link to relevant documentation about the methods used and why the workflow is set up as it is.</p>
+<p>Documenting the design comprehensively helps everyone understand what the code is supposed to achieve. It also helps you to assess and assure that the code actually does what it is supposed to do. Having a clear idea of the overall design and why it is set up this way also makes it clear whether the code could be improved.</p>
 </section>
 <section id="document-dependencies" class="level3">
 <h3 class="anchored" data-anchor-id="document-dependencies">4.3 Document dependencies</h3>
-<p>Most pipelines rely on external packages. Make it as easy as possible for others to replicate the correct environment when running the code. That means documenting the packages you use, for example using requirements files in python or a <code>DESCRIPTION</code> file and other <a href="https://r-pkgs.org/">package documentation</a> in R. Generally, packaging your code in python modules or an R package is the best way to make sure dependencies are handled cleanly.</p>
-<p>At a minimum, you should have a list of dependencies. If you need specific versions of these for the code to work, make sure you let your users know which versions they can use.</p>
+<p>Most pipelines rely on external packages or modules. Both R and python have extensive libraries of pre-built functions so you do not need to rewrite commonly used functionality yourself.</p>
+<p>Make it as easy as possible for others to replicate the correct environment when running the code. That means documenting the packages you use, for example using requirements files in python or a <code>DESCRIPTION</code> file and other <a href="https://r-pkgs.org/">package documentation</a> in R. Generally, packaging your code in python modules or an R package is the best way to make sure dependencies are handled cleanly.</p>
+<p>At a minimum, you should have a list of dependencies in your documentation. If you need specific versions of these for the code to work, make sure you let your users know which versions they can use.</p>
 </section>
 <section id="record-manual-quality-assurance-and-tests" class="level3">
 <h3 class="anchored" data-anchor-id="record-manual-quality-assurance-and-tests">4.4 Record manual quality assurance and tests</h3>
@@ -217,7 +221,8 @@ Tip
 <p>The one exception to this rule is when the code is written specifically for learning purposes. A lot of people assume code should be littered with comments, as the tutorial code they learned from was heavily commented. If colleagues struggle to understand production code, you should support them to learn rather than turning pipeline code into tutorial code.</p>
 </div>
 </div>
-<p>Explanations of methodology or your catalogue of assumptions do not belong in code comments. Rather, you should record them elsewhere and signpost them in your documentation. For example, you can create assumption or methodology documentation files and place them alongside the code in your repository. It can be useful to note in your code comments when an assumption you have made or method you have used applies directly, but you should reference the assumption or method and provide a link to where more information about it can be found, not set this out in detail in the code comments.</p>
+<p>Explanations of methodology or your catalogue of assumptions do not belong in code comments. Rather, you should record them elsewhere and signpost them in your documentation. For example, you can create assumption or methodology documentation files and place them alongside the code in your repository.</p>
+<p>It can be useful to note in your code comments when an assumption you have made or method you have used applies directly, but you should reference the assumption or method and provide a link to where more information about it can be found, rather than setting this out in detail in the code comments.</p>
 </section>
 <section id="document-functions-and-classes" class="level3">
 <h3 class="anchored" data-anchor-id="document-functions-and-classes">5.2 Document functions and classes</h3>
@@ -264,18 +269,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -307,7 +301,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -315,7 +329,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -412,7 +426,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
