@@ -94,8 +94,8 @@ Lower quality code usually needs more work in future compared with code that is 
 
 ## 10 Don't reinvent the wheel
 
-Open source code is a great tool when it comes to building pipeline. There are usually already solutions out there for most common analysis problems that mean you don’t need to write everything from scratch. 
+Open source code is a great tool when it comes to building pipeline. There are usually already solutions out there for most common analysis problems that mean you don’t need to write everything from scratch. Both R and python include extensive libraries of code modules that add functionality to the base systems. The [ONS Statistical Methods Library](https://statisticalmethodslibrary.ons.gov.uk/) also includes standard statistical code libraries that are already approved and tested for use at ONS.
 
-When tacking a new problem, check whether a package already exists that can help you. We recommend using packages that are well established and actively maintained, which you can find out by visiting their github repositories or equivalents.
+When tacking a new problem, check whether a package already exists that can help you. We recommend using packages that are well established and actively maintained, which you can find out by visiting their github repositories or equivalents. However, you must ensure that code you find meets your specifications for the pipeline and make sure that where you re-use code it is appropriately assured.
 
 There are many resources online that can help you if such a package isn’t available. Forums like [Stack Overflow](https://stackoverflow.com/) carry solutions to common errors or bugs and users often offer code examples.
