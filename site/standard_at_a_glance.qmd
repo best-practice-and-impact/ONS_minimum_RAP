@@ -52,3 +52,5 @@ title: "The ONS RAP standards at a glance"
 14. Set out clear, well defined roles and responsibilities
 
 15. Make a succession plan
+
+16. Make sure your codebase has appropriate access permissions
